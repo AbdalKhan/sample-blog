@@ -1,0 +1,16 @@
+<h1>Showing selected article</h1>
+
+<%= flash[:notice] %>
+
+<p>
+	
+	title: <%= @article.title %>
+</p>
+
+<p>
+	description <%= @article.description %>
+
+</p>
+
+<%= link_to "Back to Article Listing", articles_path %> |
+<%= link_to "Edit this article", edit_article_path(@article)  %>
